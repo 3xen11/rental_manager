@@ -1,0 +1,21 @@
+.button__primary{
+    background-color: $color-white;
+    font-size: $font__normal;
+    color: $color-primary;
+    height: $space__big;
+    border-radius: 2rem;
+    transition: all .3s;
+    font-weight: bold;
+    border:none;
+
+    &:hover{
+        background-color: $color-primary__dark;
+        color: $color-white;
+        transform: scale(1.1);
+        letter-spacing: 1px;
+    }
+
+    &:active{
+        transform: scale(1);
+    }
+}

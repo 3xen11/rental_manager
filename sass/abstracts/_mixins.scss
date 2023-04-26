@@ -1,0 +1,31 @@
+// Media Query MANAGER
+
+// 576-767px: sm - 36em
+// 768-991px: md - 48em
+// 992-1199px: lg - 62em
+// 1200-1399px: bg - 75em
+// 1400px + xl - 87.5em
+
+@mixin respond($breakpoint){
+  
+    @if $breakpoint == sm{
+      @media (min-width: 36em){@content} 	
+    };
+  
+    @if $breakpoint == md{
+      @media (min-width: 48em){@content} 		
+    };
+  
+    @if $breakpoint == lg{
+      @media (min-width: 62em){@content} 	
+    };
+
+    @if $breakpoint == bg{
+      @media (min-width: 75em){@content} 	
+    };
+
+    @if $breakpoint == xl{
+        @media (min-width: 87.5em){@content} 	
+      };
+
+  }
