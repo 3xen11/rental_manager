@@ -1,0 +1,35 @@
+{
+  "name": "rental_manager",
+  "version": "1.0.0",
+  "description": "App for managing rental",
+  "main": "script.js",
+  "scripts": {
+    "devserver": "live-server",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3xen11/rental_manager.git"
+  },
+  "keywords": [
+    "rental",
+    "managing",
+    "manager",
+    "renting",
+    "house",
+    "apartament",
+    "room"
+  ],
+  "author": "Dawid Dardziński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3xen11/rental_manager/issues"
+  },
+  "homepage": "https://github.com/3xen11/rental_manager#readme",
+  "dependencies": {
+    "webpack-dev-server": "^4.13.3"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
