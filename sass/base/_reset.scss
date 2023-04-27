@@ -11,10 +11,11 @@ html {
 }
 
 body {
+    font-family: 'Dosis', sans-serif !important;
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
     display: flex;
     min-height: 100vh;
-    background-color: #f1f1f1 !important;
+    background-color: $color-gray--light !important;
 }

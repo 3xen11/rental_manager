@@ -5,7 +5,9 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/button__primary";
-@import "components/input__primary";
+@import "components/button--primary";
+@import "components/input--primary";
+@import "components/modal_p";
+@import "components/tile-option";
 
 @import "layout/login-register";

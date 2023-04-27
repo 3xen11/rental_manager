@@ -7,14 +7,16 @@ $color-primary__dark: #F25119;
 $color-primary__light: #ffbf69;
 
 $color-secondary: #2ec4b6;
-$color-secondary__light: #cbf3f0;
+$color-secondary--light: #cbf3f0;
 
 // Shades
-
+$color-gray--dark: rgb(39, 39, 39);
+$color-gray--medium: rgb(131, 131, 131);
+$color-gray--light: rgb(242, 242, 242);
 
 
 // Spacing
-$space__small: 1.5rem;
-$space__normal: 2rem;
-$space__medium: 2.5rem;
-$space__big: 3.5rem;
+$space--small: 1.5rem;
+$space--normal: 2rem;
+$space--medium: 2.5rem;
+$space--big: 3.5rem;

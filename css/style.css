@@ -9,61 +9,83 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: 'Dosis', sans-serif !important;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
   display: flex;
   min-height: 100vh;
-  background-color: #f1f1f1 !important; }
+  background-color: #f2f2f2 !important; }
 
 .hide {
   display: none !important;
   visibility: hidden !important; }
 
-.button__primary {
+.button--primary {
   background-color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #ff9f1c;
   height: 3.5rem;
   border-radius: 2rem;
   transition: all .3s;
   font-weight: bold;
   border: none; }
-  .button__primary:hover {
+  .button--primary:hover {
     background-color: #F25119;
     color: #fff;
     transform: scale(1.1);
     letter-spacing: 1px; }
-  .button__primary:active {
+  .button--primary:active {
     transform: scale(1); }
 
-.input__primary {
+.input--primary {
   padding-left: 1.5rem;
-  font-size: 1.4rem;
   height: 3.5rem;
   border-radius: 1rem;
-  border: none; }
-  .input__primary:focus {
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem; }
+  .input--primary:focus {
     outline-color: #ffbf69; }
-  .input__primary:active {
+  .input--primary:active {
     border: 2px solid #ffbf69; }
+
+.modal-p {
+  background: #ff9f1c;
+  background: linear-gradient(90deg, #ff9f1c 0%, #ff8000 50%);
+  background-color: #ff9f1c;
+  min-height: 100vh; }
+  @media (min-width: 36em) {
+    .modal-p {
+      border-radius: 2rem;
+      min-height: 70%; } }
+  @media (min-width: 36em) {
+    .modal-p {
+      min-height: 60%; } }
+  .modal-p label {
+    color: #272727;
+    font-size: 1.8rem; }
+
+.tile-option {
+  height: 30rem;
+  width: 30rem;
+  background-color: red; }
 
 .login-register {
   min-height: 100vh; }
   @media (min-width: 36em) {
     .login-register {
-      min-height: 50rem; } }
-  .login-register .login--container, .login-register .register--container {
-    min-height: 50rem; }
+      min-height: 55rem; } }
+  .login-register .login__container, .login-register .register__container {
+    min-height: 55rem; }
     @media (min-width: 36em) {
-      .login-register .login--container, .login-register .register--container {
+      .login-register .login__container, .login-register .register__container {
         border-radius: 2rem; } }
-    .login-register .login--container label, .login-register .register--container label {
+    .login-register .login__container label, .login-register .register__container label {
       font-size: 1.8rem;
-      color: #fff;
+      color: #272727;
       text-align: start;
-      width: 100%;
-      font-weight: bold; }
+      width: 100%; }
   .login-register .login-switch, .login-register .register-switch {
     font-size: 1.8rem;
     color: #ff9f1c;
@@ -71,49 +93,51 @@ body {
     transition: all .3s; }
     .login-register .login-switch:hover, .login-register .register-switch:hover {
       cursor: pointer;
-      letter-spacing: 2px; }
-  .login-register .login-switch__small, .login-register .register-switch__small {
+      letter-spacing: 1px; }
+    .login-register .login-switch:active, .login-register .register-switch:active {
+      letter-spacing: 0px; }
+  .login-register .login-switch--small, .login-register .register-switch--small {
     font-weight: bold;
     font-size: 1.4rem;
     color: #fff; }
-  .login-register .register--container {
+  .login-register .register__container {
     background-color: #fff; }
-    .login-register .register--container .register-sticker {
+    .login-register .register__container .register-sticker {
       width: 40%; }
       @media (min-width: 62em) {
-        .login-register .register--container .register-sticker {
+        .login-register .register__container .register-sticker {
           width: 35%; } }
       @media (min-width: 75em) {
-        .login-register .register--container .register-sticker {
+        .login-register .register__container .register-sticker {
           width: 30%; } }
       @media (min-width: 87.5em) {
-        .login-register .register--container .register-sticker {
+        .login-register .register__container .register-sticker {
           width: 25%; } }
-    .login-register .register--container .register-form {
+    .login-register .register__container .register-form {
       justify-content: center;
       display: flex; }
     @media (min-width: 48em) {
-      .login-register .register--container {
+      .login-register .register__container {
         border-radius: 2rem 0 0 2rem; } }
-  .login-register .login--container {
+  .login-register .login__container {
     background-color: #fff;
-    display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column; }
+    display: flex; }
     @media (min-width: 48em) {
-      .login-register .login--container {
+      .login-register .login__container {
         border-radius: 0 2rem 2rem 0; } }
-    .login-register .login--container .login-sticker {
+    .login-register .login__container .login-sticker {
       width: 40%; }
       @media (min-width: 48em) {
-        .login-register .login--container .login-sticker {
+        .login-register .login__container .login-sticker {
           display: block;
           width: 55%; } }
       @media (min-width: 75em) {
-        .login-register .login--container .login-sticker {
+        .login-register .login__container .login-sticker {
           width: 40%; } }
-    .login-register .login--container .login-form {
+    .login-register .login__container .login-form {
       justify-content: center;
       display: flex; }
 

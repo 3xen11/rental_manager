@@ -1,20 +1,20 @@
-const loginSide = document.querySelector(".login--container");
-const registerSide = document.querySelector(".register--container");
+const loginSide = document.querySelector(".login__container");
+const registerSide = document.querySelector(".register__container");
 
 const loginForm = document.querySelector(".login-form");
 const registerForm = document.querySelector(".register-form");
 
 const loginSwitch = document.querySelector(".login-switch");
-const loginSwitchSmall = document.querySelector(".login-switch__small");
-const registerSwitchSmall = document.querySelector(".register-switch__small");
+const loginSwitchSmall = document.querySelector(".login-switch--small");
+const registerSwitchSmall = document.querySelector(".register-switch--small");
 const registerSwitch = document.querySelector(".register-switch");
 
 const loginSticker = document.querySelector(".login-sticker");
 const registerSticker = document.querySelector(".register-sticker");
 
-const loginSwtichContainer = document.querySelector(".login-switch--container");
+const loginSwtichContainer = document.querySelector(".login-switch__container");
 const registerSwtichContainer = document.querySelector(
-  ".register-switch--container"
+  ".register-switch__container"
 );
 
 const viewLoginSwitch = () => {
