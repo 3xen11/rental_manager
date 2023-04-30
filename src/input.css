@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.img-big {
+  height: 290px !important;
+  width: 290px !important; }
+
+* {
+  outline: red dashed 1px; }
+
+body {
+  font-family: Dosis, Arial, sans-serif; }

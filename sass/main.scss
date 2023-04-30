@@ -1,13 +1,8 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import "base/tailwind-imports";
 
-@import "base/reset";
-@import "base/typography";
 @import "base/utilities";
+@import "base/reset";
 
-@import "components/button--primary";
-@import "components/input--primary";
-@import "components/modal_p";
-@import "components/tile-option";
+@import "abstracts/mixins";
 
-@import "layout/login-register";
+
