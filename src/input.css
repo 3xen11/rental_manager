@@ -5,8 +5,19 @@
   height: 290px !important;
   width: 290px !important; }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
 * {
   outline: red dashed 1px; }
 
 body {
   font-family: Dosis, Arial, sans-serif; }
+
+@layer components {}

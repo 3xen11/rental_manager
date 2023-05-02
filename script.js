@@ -105,3 +105,19 @@ class Rental {
 class Apartament extends Rental {}
 class Room extends Rental {}
 class House extends Rental {}
+
+const navigation = document.querySelector(".navigation").clientHeight;
+const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburger");
+const body = document.querySelector("body");
+
+console.log(navigation);
+
+const resizeMenu = () => {
+  menu.classList.add(`h-[calc(100vh-${navigation}px)]`);
+  menu.classList.toggle(`max-md:hidden`);
+  body.classList.toggle("overflow-hidden");
+  console.log(`SZEROKOŚĆ: ${navigation}`);
+};
+
+hamburger.addEventListener("click", resizeMenu);
