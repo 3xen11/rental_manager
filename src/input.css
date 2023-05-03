@@ -3,21 +3,29 @@
 @tailwind utilities;
 .img-big {
   height: 290px !important;
-  width: 290px !important; }
+  width: 290px !important;
+}
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; }
+  display: none;
+}
 
 .scrollbar-hide {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */ }
+  /* Firefox */
+}
+
+.bot {
+  align-self: flex-end !important;
+  background-color: yellow;
+}
 
 * {
-  outline: red dashed 1px; }
+  outline: red dashed 1px;
+}
 
 body {
-  font-family: Dosis, Arial, sans-serif; }
-
-@layer components {}
+  font-family: Dosis, Arial, sans-serif;
+}

@@ -6,7 +6,7 @@
   
 
 
-  .scrollbar-hide::-webkit-scrollbar {
+.scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
 
@@ -14,3 +14,11 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+
+.bot {
+  align-self: flex-end !important;
+  background-color: yellow;
+}
+
+

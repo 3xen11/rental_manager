@@ -121,3 +121,6 @@ const resizeMenu = () => {
 };
 
 hamburger.addEventListener("click", resizeMenu);
+
+const asd = document.querySelector(".asd");
+const xd = document.querySelector(".xd");
