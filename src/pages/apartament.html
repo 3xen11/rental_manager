@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <script type="module" defer src="../../script.js"></script>
+  </head>
+
+  <body class="bg-gray-100">
+    <div
+      class="flex flex-col items-center justify-between w-full min-h-screen md:max-w-6xl mx-auto bg-yellow-300"
+    >
+      <!--* NAWIGACJA  -->
+      <nav class="navigation p-2 flex justify-between items-center w-full">
+        <div class="">LOGO</div>
+        <div class="flex">
+          <div class="hamburger z-10 md:hidden">hamburger</div>
+          <div
+            class="menu max-md:hidden landscape:max-md:justify-end bg-blue-300 max-md:h-screen flex max-md:items-center max-md:justify-center flex-col md:flex-row max-md:fixed max-md:w-screen max-md:top-0 max-md:left-0 justify-center"
+          >
+            <div
+              class="bg-green-400 flex flex-col md:flex-row max-md:justify-center max-ssm:w-5/6 max-md:w-3/4 max-md:h-3/4 text-center"
+            >
+              <ul
+                class="scrollbar-hide bg-red-400 flex flex-col md:flex-row max-md:h-[90%] max-md:overflow-y-auto text-center gap-3"
+              >
+                <li class="p-3 md:p-2">opcja 1</li>
+                <li class="p-3 md:p-2">opcja 2</li>
+                <li class="p-3 md:p-2">opcja 3</li>
+                <li class="p-3 md:p-2">opcja 4</li>
+                <li class="p-3 md:p-2">opcja 5</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--* GŁÓWNY KONTENER  -->
+      <main class="grow w-full bg-green-200 flex flex-col">
+        <div class="flex max-md:flex-col">
+          <div
+            class="w-full max-md:min-h-[40vh] bg-red-200 md:w-1/2 lg:w-[60%] landscape:max-md:h-[80vh]"
+          >
+            MAPAAAAAAAAAAAAAAA
+          </div>
+          <section
+            class="md:w-1/2 bg-purple-400 lg:w-[40%] grid gap-3 sm:grid-cols-2 md:grid-cols-1 overflow-y-auto"
+          >
+            <p class="py-3 px-2 text-sm sm:p-1">
+              Adres: Gdańsk, ul. Wenedy 52/3
+            </p>
+            <p class="py-3 px-2 text-sm sm:p-1">Liczba lokatorów: 2/2</p>
+            <p class="py-3 px-2 text-sm sm:p-1">Liczba Pokoi na wynajem: 2/2</p>
+            <p class="py-3 px-2 text-sm sm:p-1">Piętro: 0</p>
+            <p class="py-3 px-2 text-sm sm:p-1">
+              Powierzchnia mieszkania: 42m2
+            </p>
+            <p class="py-3 px-2 text-sm sm:p-1">Kaucja za pokój:</p>
+            <p class="py-3 px-2 text-sm sm:p-1">Suma czynszów: 1800zł</p>
+            <p class="py-3 px-2 text-sm sm:p-1">Spółdzielnia opłaty:</p>
+            <p class="py-3 px-2 text-sm sm:p-1">Opłaty: 400zł</p>
+            <p class="py-3 px-2 text-sm sm:p-1">Zysk: 500zł</p>
+          </section>
+        </div>
+
+        <aside class="w-full bg-blue-300 flex">
+          <p class="flex items-center"><<<</p>
+          <div
+            class="min-h-52 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 lg:grid-rows-2 auto-rows-fr p-3 gap-3 w-full"
+          >
+            <div class="min-w-[198px] min-h-[198px] lg:col-span-2">
+              zdjęcie 1
+            </div>
+            <div class="min-w-[198px] min-h-[198px] lg:col-span-2">
+              zdjęcie 2
+            </div>
+            <div class="min-w-[198px] min-h-[198px] lg:col-span-2">
+              zdjęcie 3
+            </div>
+            <div class="min-w-[198px] min-h-[198px] lg:col-span-3">
+              zdjęcie 4
+            </div>
+            <div
+              class="min-w-[198px] min-h-[198px] sm:col-span-2 lg:col-span-3"
+            >
+              zdjęcie 5
+            </div>
+          </div>
+
+          <p class="flex items-center">>>></p>
+        </aside>
+        <section
+          class="w-full bg-yellow-200 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <div class="max-sm:w-full p-3 grid grid-cols-2 grid-rows-2">
+            <div class="">zdjęcie</div>
+            <div class="">notatki</div>
+            <div class="col-span-2">
+              <p class="">Imię i nazwisko:</p>
+              <p class="">Czynsz:</p>
+              <p class="">Data zapłaty:</p>
+              <p class="">Ostatnia zapłata:</p>
+              <p class="">Początek umowy:</p>
+              <p class="">Koniec umowy:</p>
+              <p class="">Okres Wypowiedzenia:</p>
+            </div>
+          </div>
+          <div class="max-sm:w-full p-3 grid grid-cols-2 grid-rows-2">
+            <div class="">zdjęcie</div>
+            <div class="">notatki</div>
+            <div class="col-span-2">
+              <p class="">Imię i nazwisko:</p>
+              <p class="">Czynsz:</p>
+              <p class="">Data zapłaty:</p>
+              <p class="">Ostatnia zapłata:</p>
+              <p class="">Początek umowy:</p>
+              <p class="">Koniec umowy:</p>
+              <p class="">Okres Wypowiedzenia:</p>
+            </div>
+          </div>
+          <div class="max-sm:w-full p-3 grid grid-cols-2 grid-rows-2">
+            <div class="">zdjęcie</div>
+            <div class="">notatki</div>
+            <div class="col-span-2">
+              <p class="">Imię i nazwisko:</p>
+              <p class="">Czynsz:</p>
+              <p class="">Data zapłaty:</p>
+              <p class="">Ostatnia zapłata:</p>
+              <p class="">Początek umowy:</p>
+              <p class="">Koniec umowy:</p>
+              <p class="">Okres Wypowiedzenia:</p>
+            </div>
+          </div>
+          <div class="max-sm:w-full p-3 grid grid-cols-2 grid-rows-2">
+            <div class="">zdjęcie</div>
+            <div class="">notatki</div>
+            <div class="col-span-2">
+              <p class="">Imię i nazwisko:</p>
+              <p class="">Czynsz:</p>
+              <p class="">Data zapłaty:</p>
+              <p class="">Ostatnia zapłata:</p>
+              <p class="">Początek umowy:</p>
+              <p class="">Koniec umowy:</p>
+              <p class="">Okres Wypowiedzenia:</p>
+            </div>
+          </div>
+          <div class="max-sm:w-full p-3 grid grid-cols-2 grid-rows-2">
+            <div class="">zdjęcie</div>
+            <div class="">notatki</div>
+            <div class="col-span-2">
+              <p class="">Imię i nazwisko:</p>
+              <p class="">Czynsz:</p>
+              <p class="">Data zapłaty:</p>
+              <p class="">Ostatnia zapłata:</p>
+              <p class="">Początek umowy:</p>
+              <p class="">Koniec umowy:</p>
+              <p class="">Okres Wypowiedzenia:</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--* FOOTER  -->
+      <footer class="h-10 w-full flex items-center justify-around">
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+      </footer>
+    </div>
+  </body>
+</html>

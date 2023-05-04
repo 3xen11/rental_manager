@@ -122,5 +122,11 @@ const resizeMenu = () => {
 
 hamburger.addEventListener("click", resizeMenu);
 
-const asd = document.querySelector(".asd");
-const xd = document.querySelector(".xd");
+// Przejście na stronę z konkretnym apartamentem
+const apartament = document.querySelector(".apartament");
+
+apartament.addEventListener("click", () => {
+  window.location.href = "apartament.html";
+});
+
+// ustawienie wysokości mapy tak żeby była kwadratem
