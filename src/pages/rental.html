@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <script type="module" defer src="../../script.js"></script>
+  </head>
+
+  <body class="bg-cyan-800">
+    <div
+      class="flex flex-col items-center justify-between w-full min-h-screen md:max-w-6xl mx-auto"
+    >
+      <!--* NAWIGACJA  -->
+      <nav
+        class="navigation p-2 flex justify-between items-center w-full bg-cyan-950 text-gray-300"
+      >
+        <div class="">LOGO</div>
+        <div class="flex">
+          <div class="hamburger z-10 md:hidden">hamburger</div>
+          <div
+            class="menu max-md:hidden landscape:max-md:justify-end max-md:bg-blue-300 max-md:h-screen flex max-md:items-center max-md:justify-center flex-col md:flex-row max-md:fixed max-md:w-screen max-md:top-0 max-md:left-0 justify-center"
+          >
+            <div
+              class="max-md:bg-green-400 flex flex-col md:flex-row max-md:justify-center max-ssm:w-5/6 max-md:w-3/4 max-md:h-3/4 text-center"
+            >
+              <ul
+                class="scrollbar-hide flex flex-col md:flex-row max-md:h-[90%] max-md:overflow-y-auto text-center gap-3"
+              >
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 1
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 2
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 3
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 4
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 5
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--* OOPCJE NA LOKATORACH -->
+      <section
+        class="flex w-full grid-cols-6 text-center overflow-x-scroll bg-cyan-900 text-gray-300 cursor-pointer"
+      >
+        <div
+          class="p-2 transition-all duration-400 i-border-t hover:font-bold hover:text-white hover:bg-cyan-800 max-sm:min-w-[114px] w-full"
+        >
+          Dodaj Lokatora
+        </div>
+        <div
+          class="p-2 transition-all duration-400 i-border-t hover:font-bold hover:text-white hover:bg-cyan-800 max-sm:min-w-[114px] w-full"
+        >
+          Edytuj lokatora
+        </div>
+        <div
+          class="p-2 transition-all duration-400 i-border-t hover:font-bold hover:text-white hover:bg-cyan-800 max-sm:min-w-[114px] w-full"
+        >
+          Usuń lokatora
+        </div>
+        <div
+          class="p-2 transition-all duration-400 i-border-t hover:font-bold hover:text-white hover:bg-cyan-800 max-sm:min-w-[114px] w-full"
+        >
+          Dodaj zdjęcie
+        </div>
+        <div
+          class="p-2 transition-all duration-400 i-border-t hover:font-bold hover:text-white hover:bg-cyan-800 max-sm:min-w-[114px] w-full"
+        >
+          Usuń zdjęcie
+        </div>
+        <div
+          class="p-2 transition-all duration-400 i-border-t hover:font-bold hover:text-white hover:bg-cyan-800 max-sm:min-w-[114px] w-full"
+        >
+          Edytuj lokal
+        </div>
+      </section>
+
+      <!--* GŁÓWNY KONTENER  -->
+      <main class="grow w-full bg-green-200 flex flex-col">
+        <div class="flex max-md:flex-col">
+          <div
+            class="w-full max-md:min-h-[40vh] bg-red-200 md:w-1/2 lg:w-[60%] landscape:max-md:h-[80vh]"
+          >
+            <img
+              src="../../assets/img/mapa.jpg"
+              alt=""
+              class="max-w-full h-full object-cover max-md:object-contain"
+            />
+          </div>
+          <section
+            class="md:w-1/2 lg:w-[40%] grid gap-3 sm:grid-cols-2 md:grid-cols-1 overflow-y-auto p-3 bg-cyan-700 font-bold text-white"
+          >
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Adres:
+              <span class="font-light text-base">Gdańsk, ul. Wenedy 52/3</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Liczba lokatorów:
+              <span class="font-light text-base">2/2</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Liczba Pokoi na wynajem:
+              <span class="font-light text-base">2/2</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Piętro: <span class="font-light text-base">0</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Powierzchnia mieszkania:
+              <span class="font-light text-base">42m2</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Kaucja za pokój: <span class="font-light text-base">900zł</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Suma czynszów:
+              <span class="font-light text-base">1800zł</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Spółdzielnia opłaty:
+              <span class="font-light text-base">800zł</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Opłaty: <span class="font-light text-base">400zł</span>
+            </p>
+            <p
+              class="py-3 px-2 sm:p-4 bg-cyan-950 sm:p-1 rounded-xl flex justify-between"
+            >
+              Zysk: <span class="font-light text-base">500zł</span>
+            </p>
+          </section>
+        </div>
+
+        <aside class="w-full bg-blue-300 flex bg-cyan-950">
+          <div
+            class="min-h-52 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 lg:grid-rows-2 auto-rows-fr p-3 gap-3 w-full"
+          >
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-2"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-1.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-2"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-2.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-2"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-3.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-3"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-4.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] sm:col-span-2 lg:col-span-3"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-5.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+          </div>
+        </aside>
+
+        <!--* LOKATORZY  -->
+        <section
+          class="w-full bg-cyan-900 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-3"
+        >
+          <div
+            class="max-sm:w-full grid grid-cols-2 grid-rows-2 bg-cyan-950 font-bold text-white p-3 rounded-xl"
+          >
+            <div class="rounded-tl-lg bg-cyan-900 h-52">
+              <img
+                src="../../assets/img/twarz.jpg"
+                alt=""
+                class="h-full object-cover rounded-tl-lg"
+              />
+            </div>
+            <div class="bg-cyan-900 rounded-tr-lg px-2 h-52">
+              Notatki:
+              <div class="overflow-y-scroll h-44">
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 1 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 2 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 3 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 4 <span class="">X</span>
+                </p>
+
+                <p class="font-thin cursor-pointer text-center">
+                  Dodaj notatkę
+                </p>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <p class="flex py-1 justify-between">
+                Imię i nazwisko:
+                <span class="font-light text-base">Jan Nowak</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Czynsz: <span class="font-light text-base">900zł</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Data zapłaty:
+                <span class="font-light text-base">01.06.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Ostatnia zapłata:
+                <span class="font-light text-base"> 31.05.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Początek umowy:
+                <span class="font-light text-base">12.08.2021</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Koniec umowy:
+                <span class="font-light text-base">12.08.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Okres Wypowiedzenia:
+                <span class="font-light text-base">3 miesiące</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-sm:w-full grid grid-cols-2 grid-rows-2 bg-cyan-950 font-bold text-white p-3 rounded-xl"
+          >
+            <div class="rounded-tl-lg bg-cyan-900 h-52">
+              <img
+                src="../../assets/img/twarz.jpg"
+                alt=""
+                class="h-full object-cover rounded-tl-lg"
+              />
+            </div>
+            <div class="bg-cyan-900 rounded-tr-lg px-2 h-52">
+              Notatki:
+              <div class="overflow-y-scroll h-44">
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 1 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 2 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 3 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 4 <span class="">X</span>
+                </p>
+
+                <p class="font-thin cursor-pointer text-center">
+                  Dodaj notatkę
+                </p>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <p class="flex py-1 justify-between">
+                Imię i nazwisko:
+                <span class="font-light text-base">Jan Nowak</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Czynsz: <span class="font-light text-base">900zł</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Data zapłaty:
+                <span class="font-light text-base">01.06.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Ostatnia zapłata:
+                <span class="font-light text-base"> 31.05.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Początek umowy:
+                <span class="font-light text-base">12.08.2021</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Koniec umowy:
+                <span class="font-light text-base">12.08.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Okres Wypowiedzenia:
+                <span class="font-light text-base">3 miesiące</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-sm:w-full grid grid-cols-2 grid-rows-2 bg-cyan-950 font-bold text-white p-3 rounded-xl"
+          >
+            <div class="rounded-tl-lg bg-cyan-900 h-52">
+              <img
+                src="../../assets/img/twarz.jpg"
+                alt=""
+                class="h-full object-cover rounded-tl-lg"
+              />
+            </div>
+            <div class="bg-cyan-900 rounded-tr-lg px-2 h-52">
+              Notatki:
+              <div class="overflow-y-scroll h-44">
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 1 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 2 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 3 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 4 <span class="">X</span>
+                </p>
+
+                <p class="font-thin cursor-pointer text-center">
+                  Dodaj notatkę
+                </p>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <p class="flex py-1 justify-between">
+                Imię i nazwisko:
+                <span class="font-light text-base">Jan Nowak</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Czynsz: <span class="font-light text-base">900zł</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Data zapłaty:
+                <span class="font-light text-base">01.06.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Ostatnia zapłata:
+                <span class="font-light text-base"> 31.05.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Początek umowy:
+                <span class="font-light text-base">12.08.2021</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Koniec umowy:
+                <span class="font-light text-base">12.08.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Okres Wypowiedzenia:
+                <span class="font-light text-base">3 miesiące</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-sm:w-full grid grid-cols-2 grid-rows-2 bg-cyan-950 font-bold text-white p-3 rounded-xl"
+          >
+            <div class="rounded-tl-lg bg-cyan-900 h-52">
+              <img
+                src="../../assets/img/twarz.jpg"
+                alt=""
+                class="h-full object-cover rounded-tl-lg"
+              />
+            </div>
+            <div class="bg-cyan-900 rounded-tr-lg px-2 h-52">
+              Notatki:
+              <div class="overflow-y-scroll h-44">
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 1 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 2 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 3 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 4 <span class="">X</span>
+                </p>
+
+                <p class="font-thin cursor-pointer text-center">
+                  Dodaj notatkę
+                </p>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <p class="flex py-1 justify-between">
+                Imię i nazwisko:
+                <span class="font-light text-base">Jan Nowak</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Czynsz: <span class="font-light text-base">900zł</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Data zapłaty:
+                <span class="font-light text-base">01.06.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Ostatnia zapłata:
+                <span class="font-light text-base"> 31.05.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Początek umowy:
+                <span class="font-light text-base">12.08.2021</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Koniec umowy:
+                <span class="font-light text-base">12.08.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Okres Wypowiedzenia:
+                <span class="font-light text-base">3 miesiące</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-sm:w-full grid grid-cols-2 grid-rows-2 bg-cyan-950 font-bold text-white p-3 rounded-xl"
+          >
+            <div class="rounded-tl-lg bg-cyan-900 h-52">
+              <img
+                src="../../assets/img/twarz.jpg"
+                alt=""
+                class="h-full object-cover rounded-tl-lg"
+              />
+            </div>
+            <div class="bg-cyan-900 rounded-tr-lg px-2 h-52">
+              Notatki:
+              <div class="overflow-y-scroll h-44">
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 1 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 2 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 3 <span class="">X</span>
+                </p>
+                <p class="font-thin cursor-pointer flex justify-between">
+                  notatka 4 <span class="">X</span>
+                </p>
+
+                <p class="font-thin cursor-pointer text-center">
+                  Dodaj notatkę
+                </p>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <p class="flex py-1 justify-between">
+                Imię i nazwisko:
+                <span class="font-light text-base">Jan Nowak</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Czynsz: <span class="font-light text-base">900zł</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Data zapłaty:
+                <span class="font-light text-base">01.06.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Ostatnia zapłata:
+                <span class="font-light text-base"> 31.05.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Początek umowy:
+                <span class="font-light text-base">12.08.2021</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Koniec umowy:
+                <span class="font-light text-base">12.08.2023</span>
+              </p>
+              <p class="flex py-1 justify-between">
+                Okres Wypowiedzenia:
+                <span class="font-light text-base">3 miesiące</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--* FOOTER  -->
+      <footer
+        class="h-24 w-full flex items-center justify-around bg-cyan-950 font-bold text-white"
+      >
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+      </footer>
+    </div>
+  </body>
+</html>

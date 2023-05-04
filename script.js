@@ -123,10 +123,10 @@ const resizeMenu = () => {
 hamburger.addEventListener("click", resizeMenu);
 
 // Przejście na stronę z konkretnym apartamentem
-const apartament = document.querySelector(".apartament");
+const rental = document.querySelector(".rental");
 
-apartament.addEventListener("click", () => {
-  window.location.href = "apartament.html";
+rental.addEventListener("click", () => {
+  window.location.href = "rental.html";
 });
 
 // ustawienie wysokości mapy tak żeby była kwadratem

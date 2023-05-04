@@ -3,29 +3,30 @@
 @tailwind utilities;
 .img-big {
   height: 290px !important;
-  width: 290px !important;
-}
+  width: 290px !important; }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
+  display: none; }
 
 .scrollbar-hide {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
-}
+  /* Firefox */ }
 
 .bot {
   align-self: flex-end !important;
-  background-color: yellow;
-}
+  background-color: yellow; }
 
-* {
-  outline: red dashed 1px;
-}
+.i-border-t:hover {
+  transition: all .3s;
+  -webkit-box-shadow: inset 0px 14px 0px -12px white;
+  -moz-box-shadow: inset 0px 14px 0px -12px white;
+  box-shadow: inset 0px 14px 0px -12px white; }
 
 body {
   font-family: Dosis, Arial, sans-serif;
-}
+  font-size: clamp(0.88rem, calc(0.8rem + 0.37vw), 1.06rem); }
+
+.slide:hover .xd {
+  background-color: red; }
