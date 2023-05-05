@@ -1,3 +1,5 @@
-.slide:hover  .xd{
-  background-color: red;
+@layer components {
+  .unactive {
+    @apply w-full h-full bg-red-400 opacity-30 absolute top-0 left-0
+  }
 }

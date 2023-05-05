@@ -20,17 +20,17 @@
     <a href="./src/pages/user-panel.html">Panel użytkownika</a>
     <!--* ---------------------------------------------------------MAIN CONTAINER---------------------------------------------------------  -->
     <div
-      class="flex items-center justify-center min-h-screen lg:max-w-5xl mx-auto bg-white"
+      class="flex items-center justify-center min-h-screen lg:max-w-5xl mx-auto bg-cyan-900"
     >
       <!-- ^ -----------------------------------------------LOGIN AND REGISTRATION CONTAINER----------------------------------------------- -->
       <div
-        class="flex items-stretch justify-center bg-blue-500 min-h-screen xs:min-h-min w-full xs:w-5/6 ssm:w-4/6 md:w-5/6 xs:rounded-3xl xs:py-5 landscape:my-10 landscape:lg:my-0"
+        class="flex items-stretch justify-center bg-cyan-950 shadow-lg shadow-black min-h-screen xs:min-h-[450px] ssm:min-h-[645px] md:min-h-[600px] w-full xs:w-5/6 ssm:w-4/6 md:w-5/6 xs:rounded-3xl landscape:my-10 landscape:lg:my-0"
       >
         <!-- & -------------------------------------------------REGISTER SIDE-------------------------------------------------------------- -->
         <div
-          class="register__container flex flex-col items-center justify-center md:w-1/2"
+          class="register__container flex flex-col items-center justify-center md:w-1/2 text-white"
         >
-          <div class="hidden ssm:flex justify-center bg-green-500">
+          <div class="hidden ssm:flex justify-center">
             <img
               class="register-sticker w-48 h-48"
               src="./assets/img/stickers/register-sticker.png"
@@ -41,8 +41,10 @@
           <div
             class="register-switch__container hidden flex-col mt-5 text-center"
           >
-            <p class="mb-3">Nie masz jeszcze konta?</p>
-            <p class="register-switch">Zarejestruj się</p>
+            <p class="mb-3 text-xl font-thin">Nie masz jeszcze konta?</p>
+            <p class="register-switch cursor-pointer text-2xl font-bold">
+              Zarejestruj się
+            </p>
           </div>
           <!--^ FORUMULARZ REJESTRACJA  -->
           <form
@@ -50,14 +52,14 @@
           >
             <label class="pb-2 pt-5">E-mail:</label>
             <input
-              class="h-9 rounded-md"
+              class="h-9 rounded-md px-2"
               required
               id="email-register"
               type="email"
             />
             <label class="pb-2 pt-5">Hasło:</label>
             <input
-              class="h-9 rounded-md"
+              class="h-9 rounded-md px-2"
               required
               id="password-register"
               type="password"
@@ -66,7 +68,7 @@
               >Powtórz Hasło:</label
             >
             <input
-              class="h-9 rounded-md"
+              class="h-9 rounded-md px-2"
               required
               id="password-repeat-register"
               type="password"
@@ -80,7 +82,7 @@
             </div>
 
             <button
-              class="h-11 bg-white text-blue-800 rounded-full m-3 md:mt-10"
+              class="h-11 bg-white text-blue-800 rounded-full m-3 md:mt-10 text-cyan-950 font-bold hover:bg-cyan-900 hover:text-white transition-all"
               type="submit"
             >
               Rejestracja
@@ -89,9 +91,9 @@
         </div>
         <!-- & -------------------------------------------------LOGIN SIDE-------------------------------------------------------------- -->
         <div
-          class="login__container hidden flex md:flex flex-col items-center justify-center md:w-1/2 bg-red-400"
+          class="login__container hidden w-full flex md:flex flex-col items-center justify-center md:w-1/2 bg-white xs:rounded-3xl md:rounded-r-3xl"
         >
-          <div class="hidden ssm:flex justify-center bg-green-500">
+          <div class="hidden ssm:flex justify-center">
             <img
               class="login-sticker w-48 h-48 md:w-64 md:h-64"
               src="./assets/img/stickers/login-sticker.png"
@@ -101,22 +103,26 @@
           </div>
           <!--^ FORUMULARZ LOGOWANIE  -->
           <div class="login-switch__container mt-5 text-center">
-            <p class="mb-3">Masz już konto?</p>
-            <p class="login-switch">Zaloguj się</p>
+            <p class="mb-3 text-cyan-950 text-xl font-thin">Masz już konto?</p>
+            <p
+              class="login-switch cursor-pointer text-cyan-950 text-2xl font-bold"
+            >
+              Zaloguj się
+            </p>
           </div>
           <form
             class="login-form hidden flex flex-col w-64 ssm:w-80 md:w-72 lg:w-80"
           >
-            <label class="pb-2 pt-5">E-mail:</label>
+            <label class="pb-2 pt-5 text-cyan-950">E-mail:</label>
             <input
-              class="h-9 rounded-md"
+              class="h-9 rounded-md px-2"
               required
               id="email-register"
               type="email"
             />
-            <label class="pb-2 pt-5">Hasło:</label>
+            <label class="pb-2 pt-5 text-cyan-950">Hasło:</label>
             <input
-              class="h-9 rounded-md"
+              class="h-9 rounded-md px-2"
               required
               id="password-register"
               type="password"
@@ -125,12 +131,12 @@
             <div
               class="login-switch__mobile-container justify-center text-center py-5 md:hidden"
             >
-              <p class="">Nie masz jeszcze konta?</p>
+              <p class=" ">Nie masz jeszcze konta?</p>
               <p class="register-switch--mobile">Zarejestruj się</p>
             </div>
 
             <button
-              class="h-11 bg-white text-blue-800 rounded-full md:m-3 md:mt-10"
+              class="h-11 text-blue-800 rounded-full md:m-3 md:mt-10 bg-cyan-950 text-white font-bold hover:bg-cyan-900 transition-all"
               type="submit"
             >
               Logowanie

@@ -67,41 +67,51 @@
       </nav>
 
       <!--* GŁÓWNY KONTENER  -->
-      <main class="px-2 grow w-full gap-y-3 flex flex-col py-5 bg-cyan-900">
+      <main
+        class="px-2 grow w-full gap-y-3 flex items-center flex-col py-5 bg-cyan-900"
+      >
         <!--* 1 POZYCJA  -->
         <div
-          class="w-full flex justify-between rental bg-cyan-950 text-white cursor-pointer shadow-md shadow-black py-2"
+          class="w-[95%] flex justify-between rental bg-cyan-950 text-white cursor-pointer shadow-md shadow-black h-20"
         >
-          <div class="p-2 flex items-start justify-start break-all flex-col">
+          <div
+            class="p-2 flex items-start justify-center flex-col px-5 w-[200px]"
+          >
             <div class="font-semibold">Adres</div>
-            <div class="font-thin text-sm">Warszawa, ul. Walecznych 12/9</div>
+            <div class="font-thin text-sm break-all">
+              Warszawa, ul. Walecznych 12/9
+            </div>
           </div>
-          <div class="flex">
-            <div class="max-sm:hidden grow flex justify-evenly">
+
+          <div class="flex grow">
+            <div class="max-ssm:hidden grow flex justify-between">
               <div
-                class="border-l border-white flex flex-col items-start justify-center h-full px-2 hover:bg-cyan-800 transition-all"
+                class="border-l border-white flex flex-col items-center justify-center h-full px-2 hover:bg-cyan-800 transition-all grow"
               >
                 <div class="font-semibold">Ilość lokatorów:</div>
                 <div class="font-thin text-sm">3/4</div>
               </div>
+
               <div
-                class="p-2 flex flex-col items-start justify-start h-full max-md:hidden border-l border-cyan-900 max-lg:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ustalona data czynszu:</div>
-                <div class="font-thin text-sm">12/07/2023</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full border-x border-cyan-900 max-md:hidden hover:bg-cyan-800 transition-all"
+                class="p-2 flex flex-col items-center justify-center h-full max-md:hidden border-l border-cyan-900 max-lg:hidden grow hover:bg-cyan-800 transition-all"
               >
                 <div class="font-semibold">Zapłacony czynsz:</div>
                 <div class="font-thin text-sm">2/3</div>
               </div>
-            </div>
-            <div
-              class="p-2 flex flex-col items-start justify-start border-r border-white hover:bg-cyan-800 transition-all max-ssm:hidden max-sm:border-l max-sm:border-white max-md:border-l sm:max-md:border-l-cyan-900"
-            >
-              <div class="font-semibold">Zysk/strata</div>
-              <div class="font-thin text-sm">-24500</div>
+
+              <div
+                class="p-2 flex flex-col items-center justify-center h-full border-x border-cyan-900 max-md:hidden grow hover:bg-cyan-800 transition-all"
+              >
+                <div class="font-semibold">Suma czynszów:</div>
+                <div class="font-thin text-sm">2700zł</div>
+              </div>
+
+              <div
+                class="p-2 max-xs:hidden ssm:flex flex-col items-center justify-center border-r border-white hover:bg-cyan-800 grow transition-all max-sm:border-l max-sm:border-white max-md:border-l sm:max-md:border-l-cyan-900"
+              >
+                <div class="font-semibold">Zysk/strata</div>
+                <div class="font-thin text-sm">-24500</div>
+              </div>
             </div>
           </div>
           <div
@@ -111,170 +121,6 @@
           </div>
         </div>
         <!--* 1 POZYCJA  -->
-        <div
-          class="w-full flex justify-between rental bg-cyan-950 text-white cursor-pointer shadow-md shadow-black py-2"
-        >
-          <div class="p-2 flex items-start justify-start break-all flex-col">
-            <div class="font-semibold">Adres</div>
-            <div class="font-thin text-sm">Warszawa, ul. Walecznych 12/9</div>
-          </div>
-          <div class="flex">
-            <div class="max-sm:hidden grow flex justify-evenly">
-              <div
-                class="border-l border-white flex flex-col items-start justify-center h-full px-2 hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ilość lokatorów:</div>
-                <div class="font-thin text-sm">3/4</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full max-md:hidden border-l border-cyan-900 max-lg:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ustalona data czynszu:</div>
-                <div class="font-thin text-sm">12/07/2023</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full border-x border-cyan-900 max-md:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Zapłacony czynsz:</div>
-                <div class="font-thin text-sm">2/3</div>
-              </div>
-            </div>
-            <div
-              class="p-2 flex flex-col items-start justify-start border-r border-white hover:bg-cyan-800 transition-all max-ssm:hidden max-sm:border-l max-sm:border-white max-md:border-l sm:max-md:border-l-cyan-900"
-            >
-              <div class="font-semibold">Zysk/strata</div>
-              <div class="font-thin text-sm">-24500</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center hover:text-red-600 hover:font-bold transition-all max-ssm:w-auto max-ssm:pr-5 max-ssm:text-sm w-[80px]"
-          >
-            USUŃ
-          </div>
-        </div>
-        <div
-          class="w-full flex justify-between rental bg-cyan-950 text-white cursor-pointer shadow-md shadow-black py-2"
-        >
-          <div class="p-2 flex items-start justify-start break-all flex-col">
-            <div class="font-semibold">Adres</div>
-            <div class="font-thin text-sm">Warszawa, ul. Walecznych 12/9</div>
-          </div>
-          <div class="flex">
-            <div class="max-sm:hidden grow flex justify-evenly">
-              <div
-                class="border-l border-white flex flex-col items-start justify-center h-full px-2 hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ilość lokatorów:</div>
-                <div class="font-thin text-sm">3/4</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full max-md:hidden border-l border-cyan-900 max-lg:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ustalona data czynszu:</div>
-                <div class="font-thin text-sm">12/07/2023</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full border-x border-cyan-900 max-md:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Zapłacony czynsz:</div>
-                <div class="font-thin text-sm">2/3</div>
-              </div>
-            </div>
-            <div
-              class="p-2 flex flex-col items-start justify-start border-r border-white hover:bg-cyan-800 transition-all max-ssm:hidden max-sm:border-l max-sm:border-white max-md:border-l sm:max-md:border-l-cyan-900"
-            >
-              <div class="font-semibold">Zysk/strata</div>
-              <div class="font-thin text-sm">-24500</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center hover:text-red-600 hover:font-bold transition-all max-ssm:w-auto max-ssm:pr-5 max-ssm:text-sm w-[80px]"
-          >
-            USUŃ
-          </div>
-        </div>
-        <div
-          class="w-full flex justify-between rental bg-cyan-950 text-white cursor-pointer shadow-md shadow-black py-2"
-        >
-          <div class="p-2 flex items-start justify-start break-all flex-col">
-            <div class="font-semibold">Adres</div>
-            <div class="font-thin text-sm">Warszawa, ul. Walecznych 12/9</div>
-          </div>
-          <div class="flex">
-            <div class="max-sm:hidden grow flex justify-evenly">
-              <div
-                class="border-l border-white flex flex-col items-start justify-center h-full px-2 hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ilość lokatorów:</div>
-                <div class="font-thin text-sm">3/4</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full max-md:hidden border-l border-cyan-900 max-lg:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ustalona data czynszu:</div>
-                <div class="font-thin text-sm">12/07/2023</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full border-x border-cyan-900 max-md:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Zapłacony czynsz:</div>
-                <div class="font-thin text-sm">2/3</div>
-              </div>
-            </div>
-            <div
-              class="p-2 flex flex-col items-start justify-start border-r border-white hover:bg-cyan-800 transition-all max-ssm:hidden max-sm:border-l max-sm:border-white max-md:border-l sm:max-md:border-l-cyan-900"
-            >
-              <div class="font-semibold">Zysk/strata</div>
-              <div class="font-thin text-sm">-24500</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center hover:text-red-600 hover:font-bold transition-all max-ssm:w-auto max-ssm:pr-5 max-ssm:text-sm w-[80px]"
-          >
-            USUŃ
-          </div>
-        </div>
-        <div
-          class="w-full flex justify-between rental bg-cyan-950 text-white cursor-pointer shadow-md shadow-black py-2"
-        >
-          <div class="p-2 flex items-start justify-start break-all flex-col">
-            <div class="font-semibold">Adres</div>
-            <div class="font-thin text-sm">Warszawa, ul. Walecznych 12/9</div>
-          </div>
-          <div class="flex">
-            <div class="max-sm:hidden grow flex justify-evenly">
-              <div
-                class="border-l border-white flex flex-col items-start justify-center h-full px-2 hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ilość lokatorów:</div>
-                <div class="font-thin text-sm">3/4</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full max-md:hidden border-l border-cyan-900 max-lg:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Ustalona data czynszu:</div>
-                <div class="font-thin text-sm">12/07/2023</div>
-              </div>
-              <div
-                class="p-2 flex flex-col items-start justify-start h-full border-x border-cyan-900 max-md:hidden hover:bg-cyan-800 transition-all"
-              >
-                <div class="font-semibold">Zapłacony czynsz:</div>
-                <div class="font-thin text-sm">2/3</div>
-              </div>
-            </div>
-            <div
-              class="p-2 flex flex-col items-start justify-start border-r border-white hover:bg-cyan-800 transition-all max-ssm:hidden max-sm:border-l max-sm:border-white max-md:border-l sm:max-md:border-l-cyan-900"
-            >
-              <div class="font-semibold">Zysk/strata</div>
-              <div class="font-thin text-sm">-24500</div>
-            </div>
-          </div>
-          <div
-            class="flex justify-center items-center hover:text-red-600 hover:font-bold transition-all max-ssm:w-auto max-ssm:pr-5 max-ssm:text-sm w-[80px]"
-          >
-            USUŃ
-          </div>
-        </div>
       </main>
       <!--* FOOTER  -->
       <footer
