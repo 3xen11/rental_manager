@@ -17,28 +17,50 @@
 
   <body class="bg-gray-100">
     <div
-      class="flex flex-col items-center justify-between w-full min-h-screen md:max-w-6xl mx-auto bg-yellow-300"
+      class="flex flex-col items-center justify-between w-full min-h-screen md:max-w-6xl mx-auto bg-cyan-900"
     >
       <!--* NAWIGACJA  -->
 
-      <nav class="navigation p-2 flex justify-between items-center w-full">
+      <nav
+        class="navigation p-2 flex justify-between items-center w-full bg-cyan-950 text-gray-300"
+      >
         <div class="">LOGO</div>
         <div class="flex">
           <div class="hamburger z-10 md:hidden">hamburger</div>
           <div
-            class="menu max-md:hidden landscape:max-md:justify-end bg-blue-300 max-md:h-screen flex max-md:items-center max-md:justify-center flex-col md:flex-row max-md:fixed max-md:w-screen max-md:top-0 max-md:left-0 justify-center"
+            class="menu max-md:hidden landscape:max-md:justify-end max-md:bg-blue-300 max-md:h-screen flex max-md:items-center max-md:justify-center flex-col md:flex-row max-md:fixed max-md:w-screen max-md:top-0 max-md:left-0 justify-center"
           >
             <div
-              class="bg-green-400 flex flex-col md:flex-row max-md:justify-center max-ssm:w-5/6 max-md:w-3/4 max-md:h-3/4 text-center"
+              class="max-md:bg-green-400 flex flex-col md:flex-row max-md:justify-center max-ssm:w-5/6 max-md:w-3/4 max-md:h-3/4 text-center"
             >
               <ul
-                class="scrollbar-hide bg-red-400 flex flex-col md:flex-row max-md:h-[90%] max-md:overflow-y-auto text-center gap-3"
+                class="scrollbar-hide flex flex-col md:flex-row max-md:h-[90%] max-md:overflow-y-auto text-center gap-3"
               >
-                <li class="p-3 md:p-2">opcja 1</li>
-                <li class="p-3 md:p-2">opcja 2</li>
-                <li class="p-3 md:p-2">opcja 3</li>
-                <li class="p-3 md:p-2">opcja 4</li>
-                <li class="p-3 md:p-2">opcja 5</li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 1
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 2
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 3
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 4
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 5
+                </li>
               </ul>
             </div>
           </div>
@@ -47,36 +69,38 @@
 
       <!--* GŁÓWNY KONTENER  -->
       <main
-        class="grid grid-cols-1 xsm:grid-cols-2 xsm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-5 p-5"
+        class="grid grid-cols-1 xsm:grid-cols-2 xsm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-5 p-5 font-bold text-white"
       >
         <div
-          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52"
+          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52 bg-cyan-950 rounded-2xl shadow-md shadow-black"
         >
           <a href="./my-rentals.html" class="flex items-center h-full"
             >Moje lokale</a
           >
         </div>
         <div
-          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52"
+          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52 bg-cyan-950 rounded-2xl shadow-md shadow-black"
         >
           <a href="./rented-spaces.html" class="flex items-center h-full"
             >Moje wynajmy</a
           >
         </div>
         <div
-          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52"
+          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52 bg-cyan-950 rounded-2xl shadow-md shadow-black"
         >
           <a href="./find-rentals.html" class="flex items-center h-full"
             >Znajdź lokal</a
           >
         </div>
         <div
-          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52"
+          class="grid col-span-1 items-center justify-center w-44 h-44 sm:h-56 sm:w-56 md:w-64 md:h-64 lg:w-52 lg:h-52 bg-cyan-950 rounded-2xl shadow-md shadow-black"
         >
           KAFELEK 4
         </div>
       </main>
-      <footer class="h-10 w-full flex items-center justify-around">
+      <footer
+        class="h-24 w-full flex items-center justify-around bg-cyan-950 font-bold text-white"
+      >
         <p class="">info</p>
         <p class="">info</p>
         <p class="">info</p>
@@ -84,6 +108,5 @@
         <p class="">info</p>
         <p class="">info</p>
       </footer>
-    </div>
   </body>
 </html>
