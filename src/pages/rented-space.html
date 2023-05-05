@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <script type="module" defer src="../../script.js"></script>
+  </head>
+
+  <body class="bg-slate-300">
+    <div
+      class="flex flex-col items-center justify-between w-full min-h-screen md:max-w-6xl mx-auto"
+    >
+      <!--* NAWIGACJA  -->
+      <nav
+        class="navigation p-2 flex justify-between items-center w-full bg-cyan-950 text-gray-300"
+      >
+        <div class="">LOGO</div>
+        <div class="flex">
+          <div class="hamburger z-10 md:hidden">hamburger</div>
+          <div
+            class="menu max-md:hidden landscape:max-md:justify-end max-md:bg-blue-300 max-md:h-screen flex max-md:items-center max-md:justify-center flex-col md:flex-row max-md:fixed max-md:w-screen max-md:top-0 max-md:left-0 justify-center"
+          >
+            <div
+              class="max-md:bg-green-400 flex flex-col md:flex-row max-md:justify-center max-ssm:w-5/6 max-md:w-3/4 max-md:h-3/4 text-center"
+            >
+              <ul
+                class="scrollbar-hide flex flex-col md:flex-row max-md:h-[90%] max-md:overflow-y-auto text-center gap-3"
+              >
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 1
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 2
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 3
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 4
+                </li>
+                <li
+                  class="p-3 md:p-2 md:w-20 cursor-pointer hover:text-white hover:font-bold"
+                >
+                  opcja 5
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--* OOPCJE LOKATORA -->
+      <section
+        class="flex w-full grid-cols-6 text-center overflow-x-scroll bg-cyan-900 text-gray-300 cursor-pointer scrollbar-hide"
+      >
+        <div
+          class="p-2 transition-all duration-400 i-border-t hover:font-bold hover:text-white hover:bg-cyan-800 max-sm:min-w-[114px] w-full"
+        >
+          Opuść mieszkanie
+        </div>
+      </section>
+
+      <!--* GŁÓWNY KONTENER  -->
+      <main class="grow w-full flex flex-col">
+        <div class="flex max-md:flex-col">
+          <div
+            class="w-full max-md:min-h-[40vh] bg-red-200 md:w-1/2 lg:w-[60%] landscape:max-md:h-[80vh]"
+          >
+            <img
+              src="../../assets/img/mapa.jpg"
+              alt=""
+              class="max-w-full h-full object-cover max-md:object-contain"
+            />
+          </div>
+          <section
+            class="md:w-1/2 grid gap-3 ssm:grid-cols-2 overflow-y-auto p-3 bg-cyan-700 font-bold text-white"
+          >
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Adres:
+              <span class="font-light text-sm">Gdańsk, ul. Wenedy 52/3</span>
+            </p>
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Wynajęte jako:
+              <span class="font-light text-sm">Pokój</span>
+            </p>
+
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Piętro: <span class="font-light text-sm">0</span>
+            </p>
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Powierzchnia mieszkania:
+              <span class="font-light text-sm">42m2</span>
+            </p>
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Kaucja za pokój: <span class="font-light text-sm">900zł</span>
+            </p>
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Opłaty: <span class="font-light text-sm">400zł</span>
+            </p>
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Telefon właściciela:
+              <span class="font-light text-sm">123-456-789</span>
+            </p>
+            <p
+              class="p-2 md:p-3 bg-cyan-950 rounded-lg text-sm flex justify-between md:flex-col md:justify-start"
+            >
+              Mail właściciela:
+              <span class="font-light text-sm">adresmail@mail.pl</span>
+            </p>
+          </section>
+        </div>
+        <!-- * ZASADY LOKALU -->
+        <section class="bg-cyan-900 text-white">
+          <div class="">ZASADY LOKALU</div>
+        </section>
+        <!-- * GALERIA -->
+        <aside class="w-full bg-blue-300 flex bg-cyan-950">
+          <div
+            class="min-h-52 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 lg:grid-rows-2 auto-rows-fr p-3 gap-3 w-full"
+          >
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-2"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-1.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-2"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-2.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-2"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-3.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] lg:col-span-3"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-4.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+            <div
+              class="border-solid border-2 border-white shadow-md shadow-black min-w-[198px] overflow-hidden cursor-pointer min-h-[198px] sm:col-span-2 lg:col-span-3"
+            >
+              <img
+                src="../../assets/img/photos-rental/mieszkanie-5.jpg"
+                alt=""
+                class="max-w-full h-full object-cover hover:scale-110 transition-all duration-400"
+              />
+            </div>
+          </div>
+        </aside>
+      </main>
+      <!--* FOOTER  -->
+      <footer
+        class="h-24 w-full flex items-center justify-around bg-cyan-950 font-bold text-white"
+      >
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+        <p class="">info</p>
+      </footer>
+    </div>
+  </body>
+</html>
